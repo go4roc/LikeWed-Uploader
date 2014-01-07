@@ -1,0 +1,4 @@
+{   
+    "logger_level": "INFO",
+    "logger_dir": "/data/logs/"
+}

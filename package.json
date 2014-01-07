@@ -1,0 +1,29 @@
+{
+    "name": "LikeWed-Uploader",
+    "description": "LikeWed图片上传服务",
+    "version": "0.0.1",
+    "private": true,
+    "author": "Rock Peng",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/go4roc/LikeWed-Uploader.git"
+    },
+    "engines": {
+        "node": "0.10.x",
+        "npm": "1.2.x"
+    },
+    "dependencies": {
+        "express": "latest",
+        "swig": "latest",
+        "log4js": "latest",
+        "underscore": "latest",
+        "async": "latest",
+        "formidable": "latest",
+        "imagemagick": "latest",
+        "mkdirp": "latest"
+    },
+    "devDependencies": {
+        "mocha": "latest",
+        "should": "latest"
+    }
+}

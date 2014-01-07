@@ -1,0 +1,5 @@
+# Robots.txt file from http://www.likewed.com
+# All robots will spider the domain
+User-agent: *
+Allow: /
+Sitemap: http://blog.likewed.com/sitemap.xml

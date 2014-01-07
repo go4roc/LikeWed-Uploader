@@ -1,0 +1,13 @@
+{
+  "appenders": [
+    { "type": "console" },
+    {
+      "type": "file",
+      "filename": "likewed_uploader.log",
+      "maxLogSize": 20480000,
+      "backups": 10,
+      "pollInterval": 15       
+    }
+  ],
+  "replaceConsole": true
+}
