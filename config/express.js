@@ -31,40 +31,11 @@ module.exports = function(app, passport) {
         app.use(express.cookieParser());
 
         // request body parsing middleware should be above methodOverride
-        app.use('/upload/img/ad', uploader.fileHandler({
-            hostname: 'img.htwed.com',
-            uploadDir: '/data/images/img/ad',
-            pathType: "YYYY/MM",
-            uploadUrl: '/ad'
-        }));
+        app.use('/upload/img/ad', uploader.fileHandler(config.uploaders.img_ad));
 
-        app.use('/upload/img/site', uploader.fileHandler({
-            hostname: 'img.likewed.com',
-            uploadDir: '/data/images/img/site',
-            pathType: "YYYY/MM",
-            uploadUrl: '/site'
-        }));
+        app.use('/upload/img/site', uploader.fileHandler(config.uploaders.img_site));
 
-        app.use('/upload/img/logos', uploader.fileHandler({
-            hostname: 'img.htwed.com',
-            uploadDir: '/data/images/img/logos',
-            pathType: "YYYY/MM/DD",
-            uploadUrl: '/logos',
-            imageVersions: {
-                "50": {
-                    width: 50,
-                    height: 50
-                },
-                "100": {
-                    width: 100,
-                    height: 100
-                },
-                "180": {
-                    width: 180,
-                    height: 180
-                }
-            }
-        }));
+        app.use('/upload/img/logos', uploader.fileHandler(config.uploaders.img_logos));
 
         app.use(express.urlencoded());
         app.use(express.json());

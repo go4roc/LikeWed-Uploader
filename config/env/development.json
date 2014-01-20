@@ -1,4 +1,24 @@
 {
     "logger_level": "DEBUG",
-    "logger_dir": "/data/logs/"
+    "logger_dir": "/data/logs/",
+    "uploaders" : {
+    	"img_ad": {
+    		"hostname": "img.test.com",
+            "uploadDir": "/data/images/img/ad",
+            "pathType": "YYYY/MM",
+            "uploadUrl": "/ad"
+    	},
+    	"img_site": {
+    		"hostname": "img.test.com",
+            "uploadDir": "/data/images/img/site",
+            "pathType": "YYYY/MM",
+            "uploadUrl": "/site"
+    	},
+    	"img_logos": {
+    		"hostname": "img.test.com",
+            "uploadDir": "/data/images/img/logos",
+            "pathType": "YYYY/MM",
+            "uploadUrl": "/logos"
+    	}
+    }
 }

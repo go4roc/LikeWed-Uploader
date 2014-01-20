@@ -63,6 +63,7 @@ module.exports = function (options) {
                 middleware.emit('begin', fileInfo);
             })
             .on('field', function (name, value) {
+                //console.debug('arguments:', arguments);
                 //console.debug('name['+name+']=['+value+']');
             })
             .on('file', function (name, file) {

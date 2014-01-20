@@ -14,7 +14,7 @@
     },
     "dependencies": {
         "express": "latest",
-        "swig": "latest",
+        "swig": "1.2.2",
         "log4js": "latest",
         "underscore": "latest",
         "async": "latest",

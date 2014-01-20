@@ -1,6 +1,6 @@
 var fs = require('fs'),
     path = require('path'),
-    _ = require('lodash');
+    _ = require('underscore');
 
 function _getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
