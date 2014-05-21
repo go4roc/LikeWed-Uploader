@@ -32,9 +32,8 @@ module.exports = function(app, passport) {
 
         // request body parsing middleware should be above methodOverride
         app.use('/upload/img/ad', uploader.fileHandler(config.uploaders.img_ad));
-
         app.use('/upload/img/site', uploader.fileHandler(config.uploaders.img_site));
-
+        app.use('/upload/img/works', uploader.fileHandler(config.uploaders.img_works));
         app.use('/upload/img/logos', uploader.fileHandler(config.uploaders.img_logos));
 
         app.use(express.urlencoded());
