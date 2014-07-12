@@ -25,6 +25,18 @@
             "uploadDir": "/data/images/img/logos",
             "pathType": "YYYY/MM",
             "uploadUrl": "/logos"
-    	}
+    	},
+        "img_topic_covers": {
+            "hostname": "img.test.com",
+            "uploadDir": "/data/images/img/topic/covers",
+            "pathType": "YYYY/MM",
+            "uploadUrl": "/topic/covers"
+        },
+        "img_topic_items": {
+            "hostname": "img.test.com",
+            "uploadDir": "/data/images/img/topic/items",
+            "pathType": "YYYY/MM",
+            "uploadUrl": "/topic/items"
+        }
     }
 }

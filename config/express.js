@@ -35,6 +35,8 @@ module.exports = function(app, passport) {
         app.use('/upload/img/site', uploader.fileHandler(config.uploaders.img_site));
         app.use('/upload/img/works', uploader.fileHandler(config.uploaders.img_works));
         app.use('/upload/img/logos', uploader.fileHandler(config.uploaders.img_logos));
+        app.use('/upload/img/topic/covers', uploader.fileHandler(config.uploaders.img_topic_covers));
+        app.use('/upload/img/topic/items', uploader.fileHandler(config.uploaders.img_topic_items));
 
         app.use(express.urlencoded());
         app.use(express.json());
